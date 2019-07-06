@@ -75,7 +75,9 @@ Guick::Guick()
 	self.discard.onClick = [this]
 	{
 		~self.circles;
-		 self.board.clear();
+
+		self.board.clear();
+		self.count.clear();
 	};
 }
 
