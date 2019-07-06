@@ -73,8 +73,8 @@ Guick::Guick()
 	{
 		~self.circles;
 
-		 self.board.clear();
-		 self.count.clear();
+		self.board.clear();
+		self.count.clear();
 	};
 }
 
@@ -85,15 +85,18 @@ auto Guick::updateBoard(UiPoint point) -> void
 	auto constexpr radius = 8;
 	auto const     size   = self.circles.size();
 
-	for(auto i = 0; i < self.circles.size(); i++)
+	for(auto i = self.circles.size(); --i >= 0; )
 	{
 		if(self.circles[i].contains(point))
 		{
-			self.circles.remove(i--);
-			continue;
+			self.circles.remove(i);
+			break;
 		}
-		
-		self.board.draw(self.circles[i]);
+	}
+
+	for(auto const& circle : self.circles)
+	{
+		self.board.draw(circle);
 	}
 
 	if(self.circles.size() == size)
