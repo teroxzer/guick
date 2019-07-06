@@ -122,4 +122,9 @@ auto webMain() -> void
 
 /////////////////////////////////////////////////////////////////////////////
 ```
-[teroxGuick](./teroxGuick.png)
+
+[teroxGuick screenshot](./teroxGuick.png)
+
+[teroxGuick single page application](./teroxGuick.html)
+
+
