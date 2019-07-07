@@ -4,7 +4,7 @@
 //
 //	copyright (C++) 2019 public domain
 //
-//	version 2019.07.06
+//	version 2019.07.07
 //
 /////////////////////////////////////////////////////////////////////////////
 
@@ -85,7 +85,7 @@ auto Guick::updateBoard(UiPoint point) -> void
 	auto constexpr radius = 8;
 	auto const     size   = self.circles.size();
 
-	for(auto i = self.circles.size(); --i >= 0; )
+	for(auto i = self.circles.size(); i-- > 0; )
 	{
 		if(self.circles[i].contains(point))
 		{
