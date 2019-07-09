@@ -2,7 +2,9 @@
 C++ GUI quick made.
 
 [teroxGuick single page application](./teroxGuick.html)
+
 [teroxGuick work in progress](./teroxGuickWorkInProgress.png)
+
 [teroxGuick screenshot](./teroxGuick.png)
 
 ```
